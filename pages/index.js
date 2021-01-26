@@ -41,7 +41,7 @@ export default function Home() {
         <QuizLogo />
         <Widget>
           <Widget.Header>
-            <h1>The legend of zelda</h1>
+            <h1>Precisamos agir</h1>
           </Widget.Header>
           <Widget.Content>
             <form onSubmit={function (infosDoEvento) {
@@ -69,14 +69,14 @@ export default function Home() {
 
         <Widget>
           <Widget.Content>
-            <h1>Quizes da Galera</h1>
+            <h1>Aguardem mais informações</h1>
 
-            <p>lorem ipsum dolor sit amet...</p>
+            <p>Não podemos deixar mais vidas serem perdidas a esmo.</p>
           </Widget.Content>
         </Widget>
         <Footer />
       </QuizContainer>
-      <GitHubCorner projectUrl="https://github.com/omariosouto" />
+      <GitHubCorner projectUrl="https://github.com/renanshin" />
     </QuizBackground>
   );
 }
