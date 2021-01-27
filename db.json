@@ -1,28 +1,72 @@
 {
-  "bg": "https://www12.senado.leg.br/noticias/materias/2016/10/13/livro-sobre-o-processo-de-impeachment-esta-disponivel-em-formato-digital/imagem_materia.jpg/@@images/image/imagem_materia",
+  "bg": "https://hdwallpaperim.com/wp-content/uploads/2017/08/24/110183-Anonymous.jpg",
   "title": "Quiz CSS da Alura",
-  "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+  "description": "Hey, você! Desafio responder estas perguntas da atualidade:",
   "questions": [
     {
-      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-      "title": "Como fazer um seletor por id via CSS?",
-      "description": "Essa é pra aquecer",
-      "answer": 2,
+      "image": "https://media.giphy.com/media/emH74ETHkqTIMELZV2/giphy.gif",
+      "title": "Quantas latas de leite condensado precisa um governo em um ano?",
+      "description": "Afinal, tudo tem que ficar bem docinho",
+      "answer": 3,
       "alternatives": [
-        ".elemento",
-        "*elemento",
-        "#elemento",
-        "%elemento"
+        "Uma",
+        "Três",
+        "R$15.000.000 de leite condensado"
       ]
     },
     {
-      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-      "title": "Como fazer um background gradiente com css?",
-      "description": "Faz tempo em haha",
+      "image": "https://media.giphy.com/media/7QxZfWnBLdGI8/giphy.gif",
+      "title": "Você é dono de empresa. Se o seu funcionário está com um problema, o que você NUNCA QUERIA ouvir dele?",
+      "description": "O dinheiro é seu",
+      "answer": 1,
+      "alternatives": [
+         "Eu não posso fazer nada",
+         "Eu assumo que errei e vou fazer de tudo para arrumar",
+         "Você tá de vermelho. Vai morar na Venezuela"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/9KKM55c9nqaIM/giphy.gif",
+      "title": "Agora sim, o presida acabou com a corrução.",
+      "description": "Estamos salvos?",
+      "answer": 2,
+      "alternatives": [
+         "Isso é coisa da mídia. Taokey?",
+         "Vai lá morar com o Lula",
+         "Nunca se viu tantas fraudes em um presidente no Brasil, envolvendo vários laranjas e família"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/14fqnWQyxxd3wI/giphy.gif",
+      "title": "Atualmente, qual a diretriz pregada pelo governo do país?",
+      "description": "Tá suavão",
       "answer": 0,
       "alternatives": [
-         "background: linear-gradient(#e66465, #9198e5);",
-         "background: gradient(#e66465, #9198e5);"
+         "Ditadura e ódio",
+         "Paz, amor e arminha",
+         "Governo baseado na ciência"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/13oAIJjaKPhf3y/giphy.gif",
+      "title": "Um ano de pandemia, qual a sua opinião sobre a COVID-19?",
+      "description": "...",
+      "answer": 2,
+      "alternatives": [
+         "É uma gripezinha",
+         "Todo mundo vai pegar. Não posso fazer nada e vai morrer mais gente",
+         "Precisamos lavar as mãos, manter o distanciamento social e nos vacinarmos"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/d7HWDCV6t72iRm9vPh/giphy.gif",
+      "title": "Quantas pessoas precisam passar para um outro plano para classificar um governo como genocida por falta de cuidado com o seu povo?",
+      "description": "Genocida é quem tira a vida dos outros em massa",
+      "answer": 2,
+      "alternatives": [
+         "Uma família",
+         "Mais que 218.000 pessoas",
+         "Uma Pequena cidade"
       ]
     }
   ],
@@ -31,12 +75,13 @@
   ],
   "theme": {
     "colors": {
-      "primary": "#FF0000",
-      "secondary": "#29b6f6",
-      "mainBg": "#333333",
-      "contrastText": "#FFFFFF",
+      "primary": "#ff5555",
+      "secondary": "#fff85d",
+      "mainBg": "#171B35",
+      "contrastTextLight": "#ffffff",
+      "contrastText": "#000000",
       "wrong": "#FF5722",
-      "success": "#4CAF50"
+      "success": "#09ff00"
     },
     "borderRadius": "4px"
   }
