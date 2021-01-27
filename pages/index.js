@@ -68,14 +68,16 @@ export default function Home() {
 
         <Widget>
           <Widget.Content>
-            <h1>Quizes da Galera</h1>
-
-            <p>lorem ipsum dolor sit amet...</p>
+          <h1>Quizzes da Galera</h1>
+          <p><a href="https://quizz-attack-on-titan.vercel.app/">Attack on Titan</a></p>
+          <p><a href="https://radioquiz.ajp2511.vercel.app/">Quiz de Radiologia</a></p>
+          <p><a href="https://reactquiz.vercel.app">React Quiz</a></p>          
+          <p><a href="https://thequizofcrente.vercel.app/">Quiz Crente</a></p>
           </Widget.Content>
         </Widget>
         <Footer />
       </QuizContainer>
-      <GitHubCorner projectUrl="https://github.com/omariosouto" />
+      <GitHubCorner projectUrl="https://github.com/renanshin" />
     </QuizBackground>
   );
 }
