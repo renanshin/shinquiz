@@ -1,13 +1,13 @@
 {
-  "bg": "https://hdwallpaperim.com/wp-content/uploads/2017/08/24/110183-Anonymous.jpg",
-  "title": "Quiz CSS da Alura",
+  "bg": "https://media.giphy.com/media/xTcnSWYZvafyhEACBO/giphy.gif",
+  "title": "Quiz Reflexão Brasil",
   "description": "Hey, você! Desafio responder estas perguntas da atualidade:",
   "questions": [
     {
       "image": "https://media.giphy.com/media/emH74ETHkqTIMELZV2/giphy.gif",
       "title": "Quantas latas de leite condensado precisa um governo em um ano?",
       "description": "Afinal, tudo tem que ficar bem docinho",
-      "answer": 3,
+      "answer": 2,
       "alternatives": [
         "Uma",
         "Três",
@@ -75,14 +75,14 @@
   ],
   "theme": {
     "colors": {
-      "primary": "#ff5555",
+      "primary": "#8A0303",
       "secondary": "#fff85d",
       "mainBg": "#171B35",
       "contrastTextLight": "#ffffff",
       "contrastText": "#000000",
-      "wrong": "#FF5722",
+      "wrong": "#FF0000",
       "success": "#09ff00"
     },
-    "borderRadius": "4px"
+    "borderRadius": "8px"
   }
 }

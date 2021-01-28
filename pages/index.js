@@ -22,7 +22,7 @@ import Button from '../src/components/Button';
 const QuizContainer = styled.div`
   width: 100%;
   max-width: 350px;
-  padding-top: 45px;
+  padding-top: 15px;
   margin: auto 10%;
   @media screen and (max-width: 500px) {
     margin: auto;
@@ -50,7 +50,6 @@ export default function Home() {
             <form onSubmit={function (infosDoEvento) {
               infosDoEvento.preventDefault();
               router.push(`/quiz?name=${name}`);
-              console.log('Fazendo uma submissão por meio do react');
             }}
             >
               <Input
@@ -60,7 +59,7 @@ export default function Home() {
                 value={name}
               />
               <Button type="submit" disabled={name.length === 0}>
-                {`Jogar ${name}`}
+                {`Eu tenho um jogo para você ${name}`}
               </Button>
             </form>
           </Widget.Content>
@@ -68,11 +67,9 @@ export default function Home() {
 
         <Widget>
           <Widget.Content>
-          <h1>Quizzes da Galera</h1>
-          <p><a href="https://quizz-attack-on-titan.vercel.app/">Attack on Titan</a></p>
-          <p><a href="https://radioquiz.ajp2511.vercel.app/">Quiz de Radiologia</a></p>
-          <p><a href="https://reactquiz.vercel.app">React Quiz</a></p>          
-          <p><a href="https://thequizofcrente.vercel.app/">Quiz Crente</a></p>
+            <h1>Quizes da Galera</h1>
+
+            <p>lorem ipsum dolor sit amet...</p>
           </Widget.Content>
         </Widget>
         <Footer />
