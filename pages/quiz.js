@@ -28,7 +28,7 @@ function ResultWidget({ results }) {
           }, 0)} */}
           {results.filter((x) => x).length}
           {' '}
-          perguntas
+          perguntas. Reveja os seus conceitos.
         </p>
         <ul>
           {results.map((result, index) => (
@@ -82,6 +82,8 @@ function QuestionWidget({
         <h3>
           {`Pergunta ${questionIndex + 1} de ${totalQuestions}`}
         </h3>
+        {isQuestionSubmited && isCorrect && <h1>É óbvio...</h1>}
+        {isQuestionSubmited && !isCorrect && <h1>Porra, man!</h1>}
       </Widget.Header>
 
       <img
@@ -92,8 +94,8 @@ function QuestionWidget({
           objectFit: 'cover',
         }}
         src={question.image}
-      />
-      <Widget.Content>
+      />    
+      <Widget.Content>     
         <h2>
           {question.title}
         </h2>
@@ -143,8 +145,7 @@ function QuestionWidget({
           <Button type="submit" disabled={!hasAlternativeSelected}>
             Confirmar
           </Button>
-          {isQuestionSubmited && isCorrect && <p>Você acertou!</p>}
-          {isQuestionSubmited && !isCorrect && <p>Você errou!</p>}
+          
         </AlternativesForm>
       </Widget.Content>
     </Widget>

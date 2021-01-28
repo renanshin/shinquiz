@@ -24,17 +24,18 @@ const Widget = styled.div`
 Widget.Header = styled.header`
   display: flex;
   justify-content: flex-start;
+  flex-direction: column;
   align-items: center;
   padding: 18px 32px;
   background-color: ${({ theme }) => theme.colors.primary};
   
   * {
-    margin: 0;
+    margin: 5;
   }
 `;
 
 Widget.Content = styled.div`
-  padding: 24px 32px 32px 32px;
+  padding: 24px 32px 6px 32px;
   & > *:first-child {
     margin-top: 0;
   }

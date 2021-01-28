@@ -20,10 +20,18 @@ import Button from '../src/components/Button';
 // `;
 
 const QuizContainer = styled.div`
+  padding: 10px 10px 0 10px;
+  border: 2px solid #880000;
+  box-shadow:  -1px 1px #777777,
+        -2px 2px #777777,
+        -4px 3px #777777,
+        -6px 4px #777777,
+        -8px 5px #777777;
   width: 100%;
   max-width: 350px;
   padding-top: 15px;
   margin: auto 10%;
+  transform: rotate(-3deg);
   @media screen and (max-width: 500px) {
     margin: auto;
     padding: 15px;
@@ -67,9 +75,8 @@ export default function Home() {
 
         <Widget>
           <Widget.Content>
-            <h1>Quizes da Galera</h1>
-
-            <p>lorem ipsum dolor sit amet...</p>
+            <h1>Recadinho</h1>
+            <p>Reflita cada detalhe em que você pode mudar, seja onde for.</p>
           </Widget.Content>
         </Widget>
         <Footer />
