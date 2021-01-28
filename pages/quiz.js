@@ -56,7 +56,7 @@ function LoadingWidget() {
       </Widget.Header>
 
       <Widget.Content>
-        [Desafio do Loading]
+        Preparando a parafernalha ...
       </Widget.Content>
     </Widget>
   );
