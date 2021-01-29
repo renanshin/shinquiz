@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import React from 'react';
+import React,{ useEffect, useRef } from 'react';
 import db from '../db.json';
 import Widget from '../src/components/Widget';
 import QuizLogo from '../src/components/QuizLogo';
@@ -7,10 +7,23 @@ import QuizBackground from '../src/components/QuizBackground';
 import QuizContainer from '../src/components/QuizContainer';
 import AlternativesForm from '../src/components/AlternativesForm';
 import Button from '../src/components/Button';
+import VanillaTilt from 'vanilla-tilt';
+
+function Tilt(props) {
+  const { options, ...rest } = props;
+  const tilt = useRef(null);
+
+  useEffect(() => {
+    VanillaTilt.init(tilt.current, options);
+  }, [options]);
+
+  return <div ref={tilt} {...rest} />;
+}
 
 function ResultWidget({ results }) {
   return (
     <Widget>
+      
       <Widget.Header>
         Tela de Resultado:
       </Widget.Header>
@@ -196,22 +209,24 @@ export default function QuizPage() {
 
   return (
     <QuizBackground backgroundImage={db.bg}>
-      <QuizContainer>
-        <QuizLogo />
-        {screenState === screenStates.QUIZ && (
-          <QuestionWidget
-            question={question}
-            questionIndex={questionIndex}
-            totalQuestions={totalQuestions}
-            onSubmit={handleSubmitQuiz}
-            addResult={addResult}
-          />
-        )}
+      <Tilt>      
+        <QuizContainer>
+          <QuizLogo />
+          {screenState === screenStates.QUIZ && (
+            <QuestionWidget
+              question={question}
+              questionIndex={questionIndex}
+              totalQuestions={totalQuestions}
+              onSubmit={handleSubmitQuiz}
+              addResult={addResult}
+            />
+          )}
 
-        {screenState === screenStates.LOADING && <LoadingWidget />}
+          {screenState === screenStates.LOADING && <LoadingWidget />}
 
-        {screenState === screenStates.RESULT && <ResultWidget results={results} />}
-      </QuizContainer>
+          {screenState === screenStates.RESULT && <ResultWidget results={results} />}
+        </QuizContainer>
+      </Tilt>
     </QuizBackground>
   );
 }

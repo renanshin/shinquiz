@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 const QuizContainer = styled.div`
+
   padding: 10px 10px 0 10px;
   border: 2px solid #880000;
   box-shadow:  -1px 1px #777777,
